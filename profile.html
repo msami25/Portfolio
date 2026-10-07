@@ -3,97 +3,430 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Personal profile page for M Samiullah" />
-  <title>M Samiullah | Profile</title>
+  <meta name="description" content="M Samiullah — Full Stack Developer portfolio. ASP.NET Core, React, SQL Server, Docker, and AI-assisted development." />
+  <meta name="author" content="M Samiullah" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="M Samiullah | Full Stack Developer" />
+  <meta property="og:description" content="CS graduate building production-ready apps with ASP.NET Core, React, and AI-assisted workflows." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/me1.jpeg" />
+
+  <title>M Samiullah | Full Stack Developer</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="site-header">
-    <a class="logo" href="#about">M Samiullah</a>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="site-header" id="site-header">
+    <a class="logo" href="#hero">M<span class="logo-dot">.</span>Sami</a>
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="header-socials">
+      <a href="https://github.com/msami25" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+      </a>
+      <a href="https://www.linkedin.com/in/sami25/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+      </a>
+      <a href="mailto:msamikals@gmail.com" aria-label="Email">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+      </a>
+    </div>
   </header>
 
-  <main class="page-container">
-    <section id="about" class="card profile">
-      <img class="profile-pic" src="assets/me.jpeg" alt="Portrait of M Samiullah" />
-      <div class="profile-content">
-        <p class="eyebrow">Hello, I'm</p>
-        <h1>M Samiullah</h1>
-        <p>
-          I'm a recent Computer Science graduate working with React, ASP.NET Core,
-          EF Core, SQL Server, and Docker. I'm a keen learner with a strong interest
-          in AI-assisted development and modern development workflows.
-        </p>
-        <a class="button" href="#contact">Contact me</a>
+  <main>
+
+    <!-- ===== HERO ===== -->
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="eyebrow">Hello, I'm</p>
+          <h1>M Samiullah</h1>
+          <p class="hero-role">Full Stack Developer</p>
+          <p class="hero-desc">
+            Computer Science graduate in Lahore, Pakistan, building full-stack web applications
+            with <strong>ASP.NET Core</strong>, <strong>React</strong>, <strong>SQL Server</strong>,
+            and <strong>Docker</strong>. Interested in thoughtful software engineering and
+            AI-assisted development.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">
+              View my work
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="m6 17 5-5-5-5"/><path d="m13 17 5-5-5-5"/></svg>
+            </a>
+            <a class="button button-ghost" href="#contact">Get in touch</a>
+          </div>
+        </div>
+        <div class="hero-image-wrapper">
+          <div class="hero-image-glow"></div>
+          <img class="hero-image" src="assets/portrait-cutout.png" alt="M Samiullah, Computer Science graduate and full-stack developer" fetchpriority="high" />
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
       </div>
     </section>
 
-    <section id="projects" class="card">
-      <h2>My Projects</h2>
-      <p class="section-intro">A selection of projects I have built and explored.</p>
-      <div class="projects-grid">
-        <article class="project">
-          <h3>Portfolio Website</h3>
-          <p>A responsive personal website showcasing my skills and experience.</p>
-          <a href="#">View project</a>
-        </article>
-        <article class="project">
-          <h3>EventBoard – Production-Ready Event Management Platform</h3>
-          <p>A full-stack event management application built with ASP.NET Core, React, SQL Server, and Docker. It features JWT authentication, role-based admin controls, event CRUD, secure image uploads, RSVPs, weather integration, automated testing, and Seq monitoring.</p>
-          <a href="#">View project</a>
-        </article>
-        <article class="project">
-          <h3>PropertyHub – Full-Stack Real Estate Marketplace</h3>
-          <p>PropertyHub is a secure, responsive real-estate platform built with React, ASP.NET Core, EF Core, SQL Server, and Docker. It enables users to create and manage property listings, upload images, view live weather data, and browse approved properties, while administrators can moderate listings, manage accounts and roles, and monitor platform statistics.</p>
-          <a href="#">View project</a>
-        </article>
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section-label">About me</p>
+        <h2 class="section-title">A little about me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              Computer Science graduate with hands-on experience developing full-stack web
+              applications using ASP.NET Core, React, SQL Server, Entity Framework Core, and Docker.
+            </p>
+            <p>
+              Skilled in developing RESTful APIs, implementing authentication and authorization,
+              working with relational databases, and using Git/GitHub for collaborative development.
+              Familiar with software engineering best practices including testing, debugging, clean
+              architecture, and version control.
+            </p>
+            <p>
+              Experienced in modern AI-assisted and agentic software development workflows using
+              tools such as Codex and Claude Code for implementation, debugging, refactoring, and
+              iterative development. Additionally experienced in AI application development through
+              professional training and project-based learning.
+            </p>
+          </div>
+          <div class="about-highlights">
+            <div class="highlight-card">
+              <span class="highlight-number">3+</span>
+              <span class="highlight-label">Full-Stack Projects</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-number">3.01</span>
+              <span class="highlight-label">CGPA / 4.00</span>
+            </div>
+            <div class="highlight-card">
+              <span class="highlight-number">10+</span>
+              <span class="highlight-label">Technologies</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="skills" class="card">
-      <h2>My Skills</h2>
-      <p class="section-intro">Technologies I enjoy learning and working with.</p>
-      <ul class="skills-grid">
-        <li class="skill">HTML &amp; CSS</li>
-        <li class="skill">JavaScript</li>
-        <li class="skill">React</li>
-        <li class="skill">ASP.NET Core</li>
-        <li class="skill">SQL</li>
-        <li class="skill">Git &amp; GitHub</li>
-      </ul>
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects" class="section">
+      <div class="container">
+        <p class="section-label">Portfolio</p>
+        <h2 class="section-title">Featured Projects</h2>
+        <p class="section-intro">Production-ready applications built with modern full-stack technologies.</p>
+
+        <div class="projects-grid">
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+              </div>
+              <a class="project-link" href="#" aria-label="View PropertyHub project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+            <h3>PropertyHub</h3>
+            <p class="project-subtitle">Full-Stack Real Estate Platform</p>
+            <p>
+              A secure, responsive real-estate platform enabling property listing management,
+              image uploads, live weather data, and admin moderation with role-based access control.
+            </p>
+            <ul class="project-features">
+              <li>JWT authentication &amp; role-based authorization</li>
+              <li>RESTful APIs with Entity Framework Core</li>
+              <li>Clean architecture &amp; AI-assisted development</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">React</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">Docker</span>
+              <span class="tag">EF Core</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+              </div>
+              <a class="project-link" href="#" aria-label="View EventBoard project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+            <h3>EventBoard</h3>
+            <p class="project-subtitle">Event Management Platform</p>
+            <p>
+              Full-stack event management application featuring JWT authentication,
+              role-based admin controls, event CRUD, secure image uploads, RSVPs,
+              weather integration, automated testing, and Seq monitoring.
+            </p>
+            <ul class="project-features">
+              <li>Event CRUD with image uploads &amp; RSVPs</li>
+              <li>Automated testing with xUnit</li>
+              <li>Seq monitoring &amp; weather integration</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tag">ASP.NET Core</span>
+              <span class="tag">React</span>
+              <span class="tag">SQL Server</span>
+              <span class="tag">xUnit</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6H8a2 2 0 0 0-2 2v2h12v-2a2 2 0 0 0-2-2h-2c0-3 2-4 2-6a4 4 0 0 0-4-4Z"/><path d="M9 18v1a3 3 0 0 0 6 0v-1"/></svg>
+              </div>
+              <a class="project-link" href="#" aria-label="View Due Diligence Engine project">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7h10v10"/><path d="M7 17 17 7"/></svg>
+              </a>
+            </div>
+            <h3>Due Diligence Engine</h3>
+            <p class="project-subtitle">Multi-Agent AI System</p>
+            <p>
+              Automated real estate due diligence workflows using a multi-agent AI system
+              with LangGraph-based agent orchestration, FastAPI services, and PostgreSQL persistence.
+            </p>
+            <ul class="project-features">
+              <li>Multi-agent orchestration with LangGraph</li>
+              <li>FastAPI backend with PostgreSQL</li>
+              <li>AI-assisted development approach</li>
+            </ul>
+            <div class="tech-stack">
+              <span class="tag">Python</span>
+              <span class="tag">LangGraph</span>
+              <span class="tag">FastAPI</span>
+              <span class="tag">PostgreSQL</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
     </section>
 
-    <section id="contact" class="card">
-      <h2>Contact Me</h2>
-      <p class="section-intro">Have a project or idea? Send me a message.</p>
-      <form action="#" method="post">
-        <div class="form-group">
-          <label for="name">Name</label>
-          <input id="name" name="name" type="text" placeholder="Your name" required />
-        </div>
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section">
+      <div class="container">
+        <p class="section-label">Expertise</p>
+        <h2 class="section-title">Technical Skills</h2>
+        <p class="section-intro">Technologies and tools I work with to build modern applications.</p>
 
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="you@example.com" required />
-        </div>
+        <div class="skills-categories">
 
-        <div class="form-group">
-          <label for="message">Message</label>
-          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
-        </div>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              Languages
+            </h3>
+            <div class="skills-grid">
+              <span class="skill">C#</span>
+              <span class="skill">JavaScript</span>
+              <span class="skill">Python</span>
+              <span class="skill">SQL</span>
+              <span class="skill">C++</span>
+            </div>
+          </div>
 
-        <button type="submit">Send message</button>
-      </form>
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+              Frontend
+            </h3>
+            <div class="skills-grid">
+              <span class="skill">React.js</span>
+              <span class="skill">Next.js</span>
+              <span class="skill">HTML5</span>
+              <span class="skill">CSS3</span>
+              <span class="skill">Bootstrap</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2" ry="2"/><rect x="2" y="14" width="20" height="8" rx="2" ry="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
+              Backend &amp; Databases
+            </h3>
+            <div class="skills-grid">
+              <span class="skill">ASP.NET Core</span>
+              <span class="skill">EF Core</span>
+              <span class="skill">FastAPI</span>
+              <span class="skill">Flask</span>
+              <span class="skill">SQL Server</span>
+              <span class="skill">PostgreSQL</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg>
+              DevOps &amp; Tools
+            </h3>
+            <div class="skills-grid">
+              <span class="skill">Git</span>
+              <span class="skill">GitHub</span>
+              <span class="skill">Docker</span>
+              <span class="skill">Postman</span>
+              <span class="skill">VS Code</span>
+              <span class="skill">xUnit</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <h3 class="skill-category-title">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a4 4 0 0 0-4 4c0 2 2 3 2 6H8a2 2 0 0 0-2 2v2h12v-2a2 2 0 0 0-2-2h-2c0-3 2-4 2-6a4 4 0 0 0-4-4Z"/><path d="M9 18v1a3 3 0 0 0 6 0v-1"/></svg>
+              AI &amp; ML
+            </h3>
+            <div class="skills-grid">
+              <span class="skill">LangChain</span>
+              <span class="skill">LangGraph</span>
+              <span class="skill">RAG</span>
+              <span class="skill">Prompt Engineering</span>
+              <span class="skill">Codex</span>
+              <span class="skill">Claude Code</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
+
+    <!-- ===== EDUCATION ===== -->
+    <section id="education" class="section">
+      <div class="container">
+        <p class="section-label">Background</p>
+        <h2 class="section-title">Education &amp; Training</h2>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2022 — Jun 2026</span>
+              <h3>Bachelor of Science in Computer Science</h3>
+              <p class="timeline-org">Lahore Garrison University</p>
+              <p>CGPA: 3.01 / 4.00</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">3-Month Program</span>
+              <h3>AI &amp; Machine Learning — NAVTTC</h3>
+              <p class="timeline-org">Datics AI</p>
+              <p>
+                Intensive training in LangChain, LangGraph, RAG, Prompt Engineering,
+                and LLM application development. Built AI-powered projects including
+                a Due Diligence Engine, Resume Parser, and Diet Planner.
+              </p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-marker"></div>
+            <div class="timeline-content">
+              <span class="timeline-date">Nov 2019 — Aug 2022</span>
+              <h3>Diploma of Associate Engineering</h3>
+              <p class="timeline-org">Pakpolytechnic Institute</p>
+              <p>Computer Information Technology</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section">
+      <div class="container">
+        <p class="section-label">Let's connect</p>
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-intro">Have a project, idea, or internship opportunity? I'd love to hear from you.</p>
+
+        <div class="contact-grid">
+          <div class="contact-info">
+            <div class="contact-card">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+              <div>
+                <p class="contact-card-label">Email</p>
+                <a href="mailto:msamikals@gmail.com">msamikals@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+              <div>
+                <p class="contact-card-label">GitHub</p>
+                <a href="https://github.com/msami25" target="_blank" rel="noopener noreferrer">github.com/msami25</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <div>
+                <p class="contact-card-label">LinkedIn</p>
+                <a href="https://www.linkedin.com/in/sami25/" target="_blank" rel="noopener noreferrer">linkedin.com/in/sami25</a>
+              </div>
+            </div>
+            <div class="contact-card">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <p class="contact-card-label">Location</p>
+                <span>Lahore, Pakistan</span>
+              </div>
+            </div>
+          </div>
+
+          <form action="#" method="post" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" placeholder="Your name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+            </div>
+            <button type="submit">
+              Send message
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
   </main>
 
+  <!-- ===== FOOTER ===== -->
   <footer>
-    <p>&copy; 2026 M Samiullah. All rights reserved.</p>
+    <div class="container footer-content">
+      <p>&copy; 2026 M Samiullah. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="https://github.com/msami25" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/sami25/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="mailto:msamikals@gmail.com">Email</a>
+      </div>
+    </div>
   </footer>
+
 </body>
 </html>
